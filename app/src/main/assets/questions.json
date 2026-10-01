@@ -1,0 +1,59 @@
+[
+  {
+    "id": "kotlin_val_var",
+    "question": "What is the difference between val and var in Kotlin?",
+    "expectedAnswer": "val cannot be reassigned after initialization, while var can be reassigned.",
+    "keyPoints": [
+      "val cannot be reassigned after initialization",
+      "var can be reassigned"
+    ],
+    "topic": "Kotlin",
+    "difficulty": "EASY"
+  },
+  {
+    "id": "kotlin_nullable",
+    "question": "What is a nullable type in Kotlin?",
+    "expectedAnswer": "A nullable type is a type that can hold a null value. It is declared using the question mark after the type.",
+    "keyPoints": [
+      "A nullable type can hold null",
+      "Nullable types are declared using ?"
+    ],
+    "topic": "Kotlin",
+    "difficulty": "EASY"
+  },
+  {
+    "id": "android_activity",
+    "question": "What is an Activity in Android?",
+    "expectedAnswer": "An Activity represents a single screen or entry point in an Android application and provides a context for the user interface.",
+    "keyPoints": [
+      "Activity represents a screen or entry point",
+      "Provides a context for the user interface"
+    ],
+    "topic": "Android",
+    "difficulty": "EASY"
+  },
+  {
+    "id": "compose_composable",
+    "question": "What is a Composable function in Jetpack Compose?",
+    "expectedAnswer": "A Composable function is a Kotlin function marked with the Composable annotation that describes part of the user interface.",
+    "keyPoints": [
+      "It is a Kotlin function",
+      "Marked with the Composable annotation",
+      "Describes part of the UI"
+    ],
+    "topic": "Jetpack Compose",
+    "difficulty": "EASY"
+  },
+  {
+    "id": "compose_state",
+    "question": "What is state in Jetpack Compose?",
+    "expectedAnswer": "State is data that can change over time and causes a composable to recompose when the UI is observing that state.",
+    "keyPoints": [
+      "State is data that can change over time",
+      "The UI can observe state",
+      "State changes can cause recomposition"
+    ],
+    "topic": "Jetpack Compose",
+    "difficulty": "MEDIUM"
+  }
+]

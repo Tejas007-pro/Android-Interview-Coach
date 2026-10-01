@@ -13,6 +13,7 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 
 import com.example.interviewcoach.ui.components.BottomNavigationBar
+import com.example.interviewcoach.ui.screens.ai.AiTestScreen
 import com.example.interviewcoach.ui.screens.home.HomeScreen
 import com.example.interviewcoach.ui.screens.progress.ProgressScreen
 import com.example.interviewcoach.ui.screens.saved.SavedScreen
@@ -24,6 +25,8 @@ object Routes {
     const val TOPICS = "topics"
     const val PROGRESS = "progress"
     const val SAVED = "saved"
+
+    const val AI_TEST = "ai_test"
 }
 
 @Composable
@@ -56,7 +59,7 @@ fun AppNavigation(
 
         NavHost(
             navController = navController,
-            startDestination = Routes.HOME,
+            startDestination = Routes.AI_TEST,
             modifier = Modifier.padding(innerPadding)
         ) {
             composable(Routes.HOME) {
@@ -79,6 +82,10 @@ fun AppNavigation(
                 SavedScreen(
                     viewModel = viewModel
                 )
+            }
+
+            composable(Routes.AI_TEST) {
+                AiTestScreen()
             }
         }
     }
