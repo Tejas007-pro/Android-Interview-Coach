@@ -13,7 +13,7 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 
 import com.example.interviewcoach.ui.components.BottomNavigationBar
-import com.example.interviewcoach.ui.screens.ai.AiTestScreen
+import com.example.interviewcoach.ui.screens.ai.PracticeScreen
 import com.example.interviewcoach.ui.screens.home.HomeScreen
 import com.example.interviewcoach.ui.screens.progress.ProgressScreen
 import com.example.interviewcoach.ui.screens.saved.SavedScreen
@@ -85,7 +85,7 @@ fun AppNavigation(
             }
 
             composable(Routes.AI_TEST) {
-                AiTestScreen()
+                PracticeScreen(viewModel = viewModel)
             }
         }
     }

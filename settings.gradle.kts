@@ -23,5 +23,11 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "Interview Coach"
+
 include(":app")
+
+include(":lib")
+project(":lib").projectDir = file(
+    "C:/Users/fegad/Downloads/llama.cpp/examples/llama.android/lib"
+)
  
